@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#330000"
+    tools:context=".MainActivity"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+
+        android:background="#330000"
+        tools:context="com.games.android.tic_tac_toe.PlayerName">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Enter your name:"
+            android:textColor="#53ff1a"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/player1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Your name"
+            android:textColor="#00ffff"
+            android:textColorHint="#006666"
+            android:backgroundTint="#006666"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:background="#ffff00"
+            android:textColor="#000066"
+            android:textSize="16sp"
+            android:onClick="submitName"
+            />
+        <TextView
+            android:layout_marginTop="60dp"
+            android:textSize="20dp"
+            android:text="Terms and Conditions"
+            android:textColor="@color/spots_dialog_color"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/terms"
+            android:text="Keep Patience,Our computer is coming..."
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1.8"
+            android:textColor="#53ff1a"
+            />
+
+
+    </LinearLayout>
+</ScrollView>
